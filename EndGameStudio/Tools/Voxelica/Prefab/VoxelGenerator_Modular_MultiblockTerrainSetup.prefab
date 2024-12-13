@@ -1,0 +1,1054 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &255650408503720053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 255650408503720010}
+  - component: {fileID: 255650408503720011}
+  - component: {fileID: 255650408503720008}
+  - component: {fileID: 255650408503720009}
+  - component: {fileID: 255650408503720015}
+  - component: {fileID: 255650408503720014}
+  m_Layer: 18
+  m_Name: VoxelGenerator_Modular_MultiblockTerrainSetup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &255650408503720010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255650408503720053}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 255650409118321554}
+  - {fileID: 1443423989291571505}
+  - {fileID: 4861906158800637580}
+  - {fileID: 2693509966855709022}
+  - {fileID: 7326898388064685474}
+  - {fileID: 2777023921080353634}
+  - {fileID: 5699089271899939924}
+  - {fileID: 2874695886496524758}
+  - {fileID: 6721907317258958744}
+  - {fileID: 7414607711970462475}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &255650408503720011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255650408503720053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d677b93ca1a92264fae9ee541de0abe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hullGenerators:
+  - {fileID: 255650409118321555}
+  RootSize: 150
+  SubdivisionPower: 2
+  DimensionCount: 9
+  InitialValue: 0
+  AdditionalInitialValues: 
+  RestrictDimension: 000000000000000000
+  LockHullUpdates: 0
+  savesystem: {fileID: 255650408503720009}
+  worldgenerator: {fileID: 255650408503720008}
+  LODDistance: 0
+  ChunkHash: {x: 0, y: 0, z: 0}
+  MemoryOptimized: 1
+  KeepHulls: 0
+  UseInitPoint: 0
+  Initpoint: {x: 0, y: 0, z: 0}
+  DebugMode: 0
+  instanceID: 33062
+  IsExtension: 0
+  __export_foldout: 0
+  __export_savePath: Assets/
+  __export_meshName: ExportedMesh
+  __export_center: {x: -0.5, y: -0.5, z: -0.5}
+--- !u!114 &255650408503720008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255650408503720053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f056d0016b503f34880d79366e0bae3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WorldSeed: test123
+  AlgorithmTemplate: {fileID: 0}
+  AlgorithmCluster: []
+  Works: 0
+  referenceGenerator: {fileID: 255650408503720011}
+  ClearUnusedDimensions: 0
+  GenerateOnStart: 0
+  AutoLoadInEditor: 0
+--- !u!114 &255650408503720009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255650408503720053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74fc1170045fab94194de54a6fa0b5cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutoLoad: 0
+  LoadOnStart: 0
+  SaveOnSceneSave: 0
+  __migrated: 1
+  SceneVoxelData:
+    IsValid: 0
+    SubdivisionPower: 0
+    RootSize: 0
+    VoxelCount: 0
+    VoxelData: []
+    DimensionCount: 0
+    AdditionalData: []
+  EditorSaveMode: 0
+  DynamicLoadSpeed: 100
+  _VoxelMap: {fileID: 0}
+  nativevoxelengine: {fileID: 255650408503720011}
+  WorldFolder: 
+  WorldToSceneLocation: 1
+  WorldChunk: {x: 0, y: 0, z: 0}
+  WorldRegionSize: 32
+  WorldLoadingRule: 0
+  VoxelName: 
+  DuplicateMapOnClone: 0
+  SaveInSceneSubFolder: 1
+  RemoveVoxelmapOnDelete: 0
+  IsDirty: 1
+  ModuleScene:
+    saveSystem: {fileID: 0}
+    SceneVoxelData:
+      IsValid: 0
+      SubdivisionPower: 0
+      RootSize: 0
+      VoxelCount: 0
+      VoxelData: []
+      DimensionCount: 0
+      AdditionalData: []
+  ModuleScriptableObject:
+    saveSystem: {fileID: 255650408503720009}
+    _VoxelMap: {fileID: 11400000, guid: d1f2fc8d1d462e949b5d1edb1d29ba9f, type: 2}
+    DuplicateMapOnClone: 0
+    SaveInSceneSubFolder: 1
+    RemoveVoxelmapOnDelete: 0
+  ModulePersistent:
+    saveSystem: {fileID: 255650408503720009}
+    VoxelName: benchmark
+  ModuleWorld:
+    saveSystem: {fileID: 0}
+    VoxelName: 
+    WorldChunk: {x: 0, y: 0, z: 0}
+    WorldToSceneLocation: 1
+    WorldFolder: 
+    WorldLoadingRule: 0
+  ModuleRegion:
+    saveSystem: {fileID: 0}
+    VoxelName: 
+    WorldRegionSize: 32
+    WorldChunk: {x: 0, y: 0, z: 0}
+    WorldToSceneLocation: 1
+    WorldFolder: 
+    WorldLoadingRule: 0
+  ModulePersistent_V2:
+    saveSystem: {fileID: 255650408503720009}
+    VoxelName: benchmark
+  ModuleWorld_V2:
+    saveSystem: {fileID: 0}
+    VoxelName: 
+    WorldChunk: {x: 0, y: 0, z: 0}
+    WorldToSceneLocation: 1
+    WorldFolder: 
+    WorldLoadingRule: 0
+  ModulePath_V2:
+    saveSystem: {fileID: 0}
+    CurrentPath: 
+  ModuleByteBuffer_V2:
+    saveSystem: {fileID: 0}
+    Key: 
+  eventsfoldout: 0
+  OnDataSaved:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDataLoaded:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &255650408503720015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255650408503720053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65c56dda55af2bf4cbae2ae1d889f82e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetDimension: 0
+  _dimensionDefinitions: {fileID: 11400000, guid: 065eeeb3bf9700d4bae9567674f37f50, type: 2}
+  Depth: 6
+  Mode: 0
+  Opacity: 1
+  TargetingModule:
+    AlwaysModify:
+    - {fileID: 255650408503720011}
+    NeverModify: []
+    TargetingType: 1
+    _targetModule:
+      rid: 1836565379329556482
+    _targetDefault:
+      rid: 1836565379329556481
+    _targetSphereCast:
+      rid: 1836565379329556482
+  ShapeModule:
+    ShapeType: 0
+    _shape:
+      rid: 1836565379329556484
+    _shapeSphere:
+      rid: 1836565379329556484
+    _shapeBox:
+      rid: 1836565379329556485
+    _shapeEllipsoid:
+      rid: 1836565379329556486
+    _shapeSingle:
+      rid: 1000
+  PostProcessModule: []
+  PostProcessModuleBehaviors: []
+  RequireVoxelData: 0
+  MarchingCubesOffset: 1
+  ProcessingSpeed: 5
+  CleanModificationsOnly: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 1000
+      type: {class: VoxelShape_Single, ns: Fraktalia.VoxelGen.Modify, asm: Internal}
+      data:
+        ApplyObjectRotation: 0
+        boundaryExtension: 1
+        InitialID: 255
+    - rid: 1836565379329556481
+      type: {class: VoxelModifier_Target_Default, ns: Fraktalia.VoxelGen.Modify, asm: Internal}
+      data: 
+    - rid: 1836565379329556482
+      type: {class: VoxelModifier_TargetSphereCast, ns: Fraktalia.VoxelGen.Modify, asm: Internal}
+      data:
+        SphereCastLayer:
+          serializedVersion: 2
+          m_Bits: 4294967295
+        Maximum: 3
+        Radius: 10
+    - rid: 1836565379329556484
+      type: {class: VoxelShape_Sphere, ns: Fraktalia.VoxelGen.Modify, asm: Internal}
+      data:
+        ApplyObjectRotation: 0
+        boundaryExtension: 1
+        InitialID: 10
+        Radius: 104.16
+    - rid: 1836565379329556485
+      type: {class: VoxelShape_Box, ns: Fraktalia.VoxelGen.Modify, asm: Internal}
+      data:
+        ApplyObjectRotation: 0
+        boundaryExtension: 1
+        Rotation: {x: 0, y: 0, z: 0}
+        InitialID: 255
+        Bounds: {x: 10, y: 10, z: 10}
+        Radials: 0
+    - rid: 1836565379329556486
+      type: {class: VoxelShape_Ellipsoid, ns: Fraktalia.VoxelGen.Modify, asm: Internal}
+      data:
+        ApplyObjectRotation: 0
+        boundaryExtension: 1
+        Rotation: {x: 0, y: 0, z: 0}
+        InitialID: 255
+        Bounds: {x: 10, y: 10, z: 10}
+--- !u!114 &255650408503720014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255650408503720053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec23c6d9fe654247a4277ecec13c113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Modifier: {fileID: 255650408503720015}
+  AdditionalModifiers: []
+  Active: 1
+  GameCamera: {fileID: 0}
+  ImpactIndicator: {fileID: 0}
+  TargetLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  MaximumDistance: 0
+  ActivationButton: 306
+  ReliefPainting: 0
+  Paint2D: 0
+  PaintPlaneXY: 0
+  PaintPlaneXZ: 0
+  PaintPlaneYZ: 0
+  PaintPlaneOffset: 0
+  PaintPlaneSize: 2000
+  PaintPlaneColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+  PaintPosition: {x: 2802.4229, y: 379.94916, z: 736.26636}
+  PaintNormal: {x: 1, y: 0, z: 0}
+  ModeLeftClick: 1
+  ModeRightClick: 2
+  ModeMiddleClick: 3
+  NormalOffset_Left: 0
+  NormalOffset_Right: 0
+  NormalOffset_Middle: 0
+--- !u!1 &255650409118321565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 255650409118321554}
+  - component: {fileID: 255650409118321555}
+  m_Layer: 18
+  m_Name: HullGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &255650409118321554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255650409118321565}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255650408503720010}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &255650409118321555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255650409118321565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e94c5b82839d7f4991fb72be2b46e77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  engine: {fileID: 255650408503720011}
+  AppliedHideflags: 3
+  Locked: 0
+  LockAfterInit: 0
+  NoCollision: 0
+  ConvexCollider: 0
+  Invisible: 0
+  ClosedHull: 1
+  IgnoreDimensions: 0
+  IgnoreDimensionList: 
+  OnHullGenerationStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHullGenerationComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  VoxelMeshes: []
+  instanceID: 33068
+  DebugMode: 0
+  width: 16
+  Cell_Subdivision: 4
+  NumCores: 4
+  frameBudgetPerCell: 0
+  SurfaceDimension: 0
+  CurrentLOD: 0
+  NoDistanceCollision: 0
+  FarDistance: 0
+  VoxelMaterial: {fileID: 2100000, guid: 745000f5927df9d4281fc84e67b3379b, type: 2}
+  MeshSurfaceAlgorithm: 1
+  PostProcessModules:
+  - Name: 
+    ModifierType: 7
+    Disabled: 0
+    _modifier:
+      rid: 4671010477475627033
+  - Name: 
+    ModifierType: 7
+    Disabled: 0
+    _modifier:
+      rid: 6102740915562741784
+  DetailGenerator: []
+  moduleMarchingCubes_CPU:
+    SurfacePoint: 128
+  moduleMarchingCubes_GPU:
+    SurfacePoint: 128
+    m_marchingCubes: {fileID: 7200000, guid: a85ae2bce31b12a4dad3424fdbed9f9c, type: 3}
+  moduleCubic:
+    SurfacePoint: 128
+    AtlasRows: 16
+    m_marchingCubes: {fileID: 7200000, guid: 0dc0a890b13024a47bb1e99c0fa2fde0, type: 3}
+  moduleCrystal:
+    SurfacePoint: 129
+    CrystalMesh: {fileID: 4300000, guid: 0c37900e84574615a76855a7bfffa094, type: 3}
+    CrystalPositioning:
+      Offset_min: {x: 0, y: 0, z: 0}
+      Offset_max: {x: 0, y: 0, z: 0}
+      Scale_min: {x: 1, y: 1, z: 1}
+      Scale_max: {x: 1, y: 1, z: 1}
+      ScaleFactor_min: 2
+      ScaleFactor_max: 2
+      Rotation_min: {x: 0, y: 0, z: 0}
+      Rotation_max: {x: 0, y: 0, z: 0}
+    PermutationSeed: awdwadwa
+    m_marchingCubes: {fileID: 7200000, guid: 1353cb8d6aaa65642bc99ba60001ad43, type: 3}
+  moduleMeshOnly:
+    MeshSource: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    MeshPosition: {x: 0, y: 0, z: 0}
+    MeshRotationEuler: {x: 0, y: 0, z: 0}
+    MeshScale: {x: 0, y: 0, z: 0}
+    BestFit: 1
+  LODSize: 100000000800000004000000
+  activeCores: 4
+  activeCells: 3c0000003d0000003e0000003f000000
+  synchronitylevel: -1
+  references:
+    version: 2
+    RefIds:
+    - rid: 4671010477475627033
+      type: {class: SurfaceModifier_MultiTexture_V2, ns: Fraktalia.VoxelGen.Visualisation, asm: Internal}
+      data:
+        Layer1Dimension: 1
+        Layer2Dimension: 2
+        Layer3Dimension: 3
+        Layer4Dimension: 4
+        Layer5Dimension: 5
+        Layer6Dimension: 6
+        Layer7Dimension: 7
+        Layer8Dimension: 8
+        Layer9Dimension: -1
+        Layer10Dimension: -1
+        Layer11Dimension: -1
+        Layer12Dimension: -1
+    - rid: 6102740915562741784
+      type: {class: SurfaceModifier_MultiTexture_V2, ns: Fraktalia.VoxelGen.Visualisation, asm: Internal}
+      data:
+        Layer1Dimension: 1
+        Layer2Dimension: 2
+        Layer3Dimension: 3
+        Layer4Dimension: 4
+        Layer5Dimension: 5
+        Layer6Dimension: 6
+        Layer7Dimension: 7
+        Layer8Dimension: 8
+        Layer9Dimension: -1
+        Layer10Dimension: -1
+        Layer11Dimension: -1
+        Layer12Dimension: -1
+--- !u!1 &1443423989291571504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1443423989291571505}
+  - component: {fileID: 1443423989291571506}
+  m_Layer: 0
+  m_Name: TerrainToVoxel_Surface (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1443423989291571505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443423989291571504}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255650408503720010}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1443423989291571506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443423989291571504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41d861c640672f42b8eb6f680a649b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGenerator: {fileID: 255650408503720011}
+  Depth: 7
+  TargetDimension: 0
+  Additive: 0
+  ClearBlock: 1
+  ErrorMessage: This setup would modify more than 5 Million Voxels. You do not want
+    to freeze Unity
+  IgnoreErrors: 0
+  TerrainToConvert: {fileID: 0}
+  OffsetY: 12.5
+  TopExtension: 150
+  BottomExtension: -120
+  FillPositiveSide: 0
+  FillNegativeSide: 1
+  FallOff: 10
+  Mode: 0
+  TextureMultiplier: 0
+  TargetTextureLayer: 0
+  Smoothing: 0
+  finalMultiplier: 1
+--- !u!1 &2693509966855709023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2693509966855709022}
+  - component: {fileID: 2693509966855709017}
+  m_Layer: 0
+  m_Name: TerrainToVoxel_Textures (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &2693509966855709022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2693509966855709023}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255650408503720010}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2693509966855709017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2693509966855709023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41d861c640672f42b8eb6f680a649b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGenerator: {fileID: 255650408503720011}
+  Depth: 7
+  TargetDimension: 2
+  Additive: 0
+  ClearBlock: 0
+  ErrorMessage: This setup would modify more than 5 Million Voxels. You do not want
+    to freeze Unity
+  IgnoreErrors: 0
+  TerrainToConvert: {fileID: 0}
+  OffsetY: 12.5
+  TopExtension: 150
+  BottomExtension: -120
+  FillPositiveSide: 0
+  FillNegativeSide: 1
+  FallOff: 1
+  Mode: 2
+  TextureMultiplier: 32
+  TargetTextureLayer: 1
+  Smoothing: 1
+  finalMultiplier: 1
+--- !u!1 &2777023921080353635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2777023921080353634}
+  - component: {fileID: 2777023921080353637}
+  m_Layer: 0
+  m_Name: TerrainToVoxel_Textures (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &2777023921080353634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2777023921080353635}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255650408503720010}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2777023921080353637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2777023921080353635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41d861c640672f42b8eb6f680a649b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGenerator: {fileID: 255650408503720011}
+  Depth: 7
+  TargetDimension: 4
+  Additive: 0
+  ClearBlock: 0
+  ErrorMessage: This setup would modify more than 5 Million Voxels. You do not want
+    to freeze Unity
+  IgnoreErrors: 0
+  TerrainToConvert: {fileID: 0}
+  OffsetY: 12.5
+  TopExtension: 150
+  BottomExtension: -120
+  FillPositiveSide: 0
+  FillNegativeSide: 1
+  FallOff: 1
+  Mode: 2
+  TextureMultiplier: 32
+  TargetTextureLayer: 3
+  Smoothing: 1
+  finalMultiplier: 1
+--- !u!1 &2874695886496524759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2874695886496524758}
+  - component: {fileID: 2874695886496524753}
+  m_Layer: 0
+  m_Name: TerrainToVoxel_Textures (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &2874695886496524758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2874695886496524759}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255650408503720010}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2874695886496524753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2874695886496524759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41d861c640672f42b8eb6f680a649b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGenerator: {fileID: 255650408503720011}
+  Depth: 7
+  TargetDimension: 6
+  Additive: 0
+  ClearBlock: 0
+  ErrorMessage: This setup would modify more than 5 Million Voxels. You do not want
+    to freeze Unity
+  IgnoreErrors: 0
+  TerrainToConvert: {fileID: 0}
+  OffsetY: 12.5
+  TopExtension: 150
+  BottomExtension: -120
+  FillPositiveSide: 0
+  FillNegativeSide: 1
+  FallOff: 1
+  Mode: 2
+  TextureMultiplier: 32
+  TargetTextureLayer: 5
+  Smoothing: 1
+  finalMultiplier: 1
+--- !u!1 &4861906158800637581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4861906158800637580}
+  - component: {fileID: 4861906158800637579}
+  m_Layer: 0
+  m_Name: TerrainToVoxel_Textures
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &4861906158800637580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4861906158800637581}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255650408503720010}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4861906158800637579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4861906158800637581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41d861c640672f42b8eb6f680a649b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGenerator: {fileID: 255650408503720011}
+  Depth: 7
+  TargetDimension: 1
+  Additive: 0
+  ClearBlock: 0
+  ErrorMessage: This setup would modify more than 5 Million Voxels. You do not want
+    to freeze Unity
+  IgnoreErrors: 0
+  TerrainToConvert: {fileID: 0}
+  OffsetY: 12.5
+  TopExtension: 150
+  BottomExtension: -120
+  FillPositiveSide: 0
+  FillNegativeSide: 1
+  FallOff: 1
+  Mode: 2
+  TextureMultiplier: 32
+  TargetTextureLayer: 0
+  Smoothing: 1
+  finalMultiplier: 1
+--- !u!1 &5699089271899939925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5699089271899939924}
+  - component: {fileID: 5699089271899939923}
+  m_Layer: 0
+  m_Name: TerrainToVoxel_Textures (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &5699089271899939924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5699089271899939925}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255650408503720010}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5699089271899939923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5699089271899939925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41d861c640672f42b8eb6f680a649b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGenerator: {fileID: 255650408503720011}
+  Depth: 7
+  TargetDimension: 5
+  Additive: 0
+  ClearBlock: 0
+  ErrorMessage: This setup would modify more than 5 Million Voxels. You do not want
+    to freeze Unity
+  IgnoreErrors: 0
+  TerrainToConvert: {fileID: 0}
+  OffsetY: 12.5
+  TopExtension: 150
+  BottomExtension: -120
+  FillPositiveSide: 0
+  FillNegativeSide: 1
+  FallOff: 1
+  Mode: 2
+  TextureMultiplier: 32
+  TargetTextureLayer: 4
+  Smoothing: 1
+  finalMultiplier: 1
+--- !u!1 &6721907317258958745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6721907317258958744}
+  - component: {fileID: 6721907317258958751}
+  m_Layer: 0
+  m_Name: TerrainToVoxel_Textures (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &6721907317258958744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6721907317258958745}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255650408503720010}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6721907317258958751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6721907317258958745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41d861c640672f42b8eb6f680a649b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGenerator: {fileID: 255650408503720011}
+  Depth: 7
+  TargetDimension: 7
+  Additive: 0
+  ClearBlock: 0
+  ErrorMessage: This setup would modify more than 5 Million Voxels. You do not want
+    to freeze Unity
+  IgnoreErrors: 0
+  TerrainToConvert: {fileID: 0}
+  OffsetY: 12.5
+  TopExtension: 150
+  BottomExtension: -120
+  FillPositiveSide: 0
+  FillNegativeSide: 1
+  FallOff: 1
+  Mode: 2
+  TextureMultiplier: 32
+  TargetTextureLayer: 6
+  Smoothing: 1
+  finalMultiplier: 1
+--- !u!1 &7326898388064685475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7326898388064685474}
+  - component: {fileID: 7326898388064685477}
+  m_Layer: 0
+  m_Name: TerrainToVoxel_Textures (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &7326898388064685474
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7326898388064685475}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255650408503720010}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7326898388064685477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7326898388064685475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41d861c640672f42b8eb6f680a649b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGenerator: {fileID: 255650408503720011}
+  Depth: 7
+  TargetDimension: 3
+  Additive: 0
+  ClearBlock: 0
+  ErrorMessage: This setup would modify more than 5 Million Voxels. You do not want
+    to freeze Unity
+  IgnoreErrors: 0
+  TerrainToConvert: {fileID: 0}
+  OffsetY: 12.5
+  TopExtension: 150
+  BottomExtension: -120
+  FillPositiveSide: 0
+  FillNegativeSide: 1
+  FallOff: 1
+  Mode: 2
+  TextureMultiplier: 32
+  TargetTextureLayer: 2
+  Smoothing: 1
+  finalMultiplier: 1
+--- !u!1 &7414607711970462474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7414607711970462475}
+  - component: {fileID: 7414607711970462476}
+  m_Layer: 0
+  m_Name: TerrainToVoxel_Textures (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &7414607711970462475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7414607711970462474}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255650408503720010}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7414607711970462476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7414607711970462474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41d861c640672f42b8eb6f680a649b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGenerator: {fileID: 255650408503720011}
+  Depth: 7
+  TargetDimension: 8
+  Additive: 0
+  ClearBlock: 0
+  ErrorMessage: This setup would modify more than 5 Million Voxels. You do not want
+    to freeze Unity
+  IgnoreErrors: 0
+  TerrainToConvert: {fileID: 0}
+  OffsetY: 12.5
+  TopExtension: 150
+  BottomExtension: -120
+  FillPositiveSide: 0
+  FillNegativeSide: 1
+  FallOff: 1
+  Mode: 2
+  TextureMultiplier: 32
+  TargetTextureLayer: 7
+  Smoothing: 1
+  finalMultiplier: 1
