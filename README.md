@@ -5,7 +5,11 @@
  
 ![Screenshot 2024-12-13 114844](https://github.com/user-attachments/assets/d37115a1-118e-4c7b-bc61-d057736848c5)
 
-This will load an alternate Texture Array Generator Window that has two new fields: "Extract From Terrain" and "Terrain To Extract From". The former is the bool to extract the materials from the terrain, which will become obsolete but will be used for now. This should be checked true. The "Terrain To Extract From" field should be automatically filled with the TerrainData that belongs to the Terrain you had highlighted. At this step don't forget to make your material. This has been tested on both the Standard and URP/HDRP projects.![Screenshot 2024-12-13 115116](https://github.com/user-attachments/assets/ab383814-8f32-4db2-a1c7-a24e6f2216b7)
+This will load an alternate Texture Array Generator Window that has two new fields: "Extract From Terrain" and "Terrain To Extract From". The former is the bool to extract the materials from the terrain, which will become obsolete but will be used for now. This should be checked true. The "Terrain To Extract From" field should be automatically filled with the TerrainData that belongs to the Terrain you had highlighted. At this step don't forget to make your material. The included prefab is set up for the 8 channel UV Blend shaders. This has been tested on both the Standard and URP/HDRP projects.
+
+
+
+![Screenshot 2024-12-13 115116](https://github.com/user-attachments/assets/ab383814-8f32-4db2-a1c7-a24e6f2216b7)
 
 Make sure all of your options, like pathnames, are set and the new material is in the Target Material field.
 
