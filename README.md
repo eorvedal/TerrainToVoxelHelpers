@@ -49,7 +49,7 @@ Reopen the prefab in prefab mode and the top and bottom extension numbers on the
 ![Screenshot 2024-12-13 122537](https://github.com/user-attachments/assets/20d0f61f-6c37-464a-86fd-32ab1297636b)
 
 In the offset field of the [CONVERTER] set the the Y value of the prefab when it was in position with your terrain. Also change the size to the volume size we noted at that time. [IMPORTANT] Let the script position the generators using the offset instead of changing the position of the actual prefab in or out of prefab mode!
-Press "Get All Terrains" on the [CONVERTER] and confim that all the terrains you want converted are in the list. If they are, press "Create All Voxels From Terrains" If you are using a single terrain, you can skip right to "Run All Modifiers" and "Save All Vodel Generators". 
+Press "Get All Terrains" on the [CONVERTER] and confim that all the terrains you want converted are in the list. If they are, press "Create All Voxels From Terrains" If you are using a single terrain, you can skip right to "Run All Modifiers" and "Save All Voxel Generators". 
 However, if you have multiple terrains press "Create Multiblock From All Voxels". In some cases you will need your terrain as part of the voxel block, in this case you can press "Parent Terrains to Generators" and disable the Terrain component until you need it.
 You should now be ready to press "Run All Modifiers" and "Save All Voxel Generators" when that is finished.
 
