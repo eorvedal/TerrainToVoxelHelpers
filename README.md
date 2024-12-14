@@ -36,7 +36,7 @@ IMPORTANT! For some reason the Post Process Modules on the Hull Generator change
 
 ![image](https://github.com/user-attachments/assets/07c83ae4-d2b4-4259-ac1e-f94754553286)
 
-Close the prefab, we will now make sure our offsets are correct. Drag the same prefab in the scene and set it to the same world position as your terrain or first terrain. Change the Volume size of the generator until it fits your terrain around the edges. Lower the Y value of position until you have the terrain in a position inside the block that you are satisfied with. Select all of the TerrainToVoxel modifiers and adjust the Top Extension and the Bottom Extension to make sure they completely overlap your terrain height-wise. Make note of: the prefab's adjusted Y position, the generator's volume size, and the top and bottom extension of the modifiers. Then delete the prefab from the scene.
+Close the prefab, we will now make sure our offsets are correct. Drag the same prefab in the scene and set it to the same world position as your terrain or first terrain. Change the Volume size of the generator until it fits your terrain around the edges. Lower the Y value of position until you have the terrain in a position inside the block that you are satisfied with. Select all of the TerrainToVoxel modifiers and adjust the Top Extension and the Bottom Extension to make sure they completely overlap your terrain height-wise. Make note of: the prefab's adjusted Y position, the generator's volume size, and the top and bottom extension of the modifiers. Then delete the prefab from the scene WITHOUT saving the changes.
 
 ![Screenshot 2024-12-13 122113](https://github.com/user-attachments/assets/056fffee-3040-4aa9-a19c-4faf6f131069)
 
@@ -44,7 +44,7 @@ Close the prefab, we will now make sure our offsets are correct. Drag the same p
 
 ![Screenshot 2024-12-13 122503](https://github.com/user-attachments/assets/51ec0efc-e079-4498-835f-34d22c780603)
 
-Reopen the prefab in prefab mode and the top and bottom extension numbers on the modifiers. This will save you the time of doing it multiple times if you have more than one terrain. Close the prefab again and return to the scene. Find the [CONVERTER] prefab and drag it into your scene.
+Reopen the prefab in prefab mode and set the top and bottom extension numbers on the modifiers. This will save you the time of doing it multiple times if you have more than one terrain. Close the prefab again and return to the scene. Find the [CONVERTER] prefab and drag it into your scene.
 
 ![Screenshot 2024-12-13 122537](https://github.com/user-attachments/assets/20d0f61f-6c37-464a-86fd-32ab1297636b)
 
